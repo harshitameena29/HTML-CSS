@@ -1,0 +1,201 @@
+ @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("images/background.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 720px;
+    position: relative;
+}
+
+.main .box {
+    height: 720px;
+    width: 100%;
+    opacity: 0.74;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 80vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    
+}
+
+nav img {
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    margin: 5px;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 20px;
+}
+
+.middle {
+    font-family: "Martel Sans", sans-serif;
+    height: calc(90% - 100px);
+    width: 45vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+    margin: auto;
+
+}
+
+.middle> :nth-child(1) {
+    
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.middle> :nth-child(2) {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: normal;
+    text-align: center;
+}
+
+.middle> :nth-child(3) {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 50px;
+    text-align: center;
+}
+ .curve {
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+ .curve svg {
+            display: block;
+            width: 100%;
+            height: 100px;
+           
+        }
+.buttonsmain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:8px;
+    
+}
+.btn{
+    background-color: transparent;
+    padding: 7px 14px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid rgb(97, 95, 95);
+}
+
+.btn-red-sm{
+     background-color: #e50914;
+    }
+.btn-red {
+     background-color: #e50914;
+     padding: 8px 22px;
+     font-size: 25px;
+}
+.main input{
+    background-color: transparent;
+    border: 1px solid rgb(97, 95, 95);
+    padding: 17px 10px;
+    width:350px;
+    font-size: 15px;
+    border-radius: 4px;
+    text-align: left;
+    color: aliceblue;
+}
+.main input::placeholder {
+    color: rgb(206, 201, 201);
+}
+
+.first{
+    color: aliceblue;
+    padding: 0 130px;
+    max-width: 1200px;
+    margin: auto;
+    
+}
+ h2{
+    padding: 30px 0px;
+    padding-top: 50px;   
+    padding-bottom: 15px;
+}
+.secimg{
+    display: flex;
+    gap: 45px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 0 20px;
+    
+}
+.secimg img{
+    height: 250px;
+    object-fit: cover;
+}
+img{
+    border-radius: 5px;
+}
+.boxes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; 
+    margin: auto;
+}
+
+.boxy{
+    display: inline-block;
+    height:40vh;
+    width: 19vw;
+    border: 2px solid white;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #17043b, #3c0b17);
+     text-align: center;
+}
+.que{
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 30px;
+    max-width: 100%;
+    margin: 10px auto;
+    cursor: pointer;
+}
+.third{
+    color: aliceblue;
+    padding: 0 130px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+

@@ -1,0 +1,60 @@
+<!-- CSS Specificity helps determine what style will be applied to the HTML element(s) when there are overlapping or multiple CSS rules.
+ 
+The Cascade Algorithm
+1.Position and order of appearance: the order in which your CSS rules appear(agar same selector h jaise sirf class diya h to jo sabse bottom me use hua h vo apply hoga)
+
+2.Specificity: an algorithm that determines which CSS selector has the strongest match
+
+ORDER:Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector.
+Universal Selector: 0
+Element selectors and pseudo-elements: 1 eg(<p>, <div>, <a>)
+Class selectors, attribute selectors, and pseudo-classes: 10
+ID selectors: 100
+Inline styles: 1000
+
+3.Origin: the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS.
+
+4.Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type.(website pr jaake import karo aur vha (color:red !importance) aisa likhdo to it gets highest priority).
+An !important at the end of a CSS value gets a specificity score of 10,000 points. This is the highest specificity that one individual item can get
+
+Q: a.harryclass.rohan-class[href]:hover {
+  color: red;
+}
+Calculation:Element selectors: a contributes 1 point.
+Class selectors: .harryclass and .rohan-class each contribute 10 points, totaling 20 points.
+Attribute selector: [href] contributes 10 points.
+Pseudo-class: :hover adds another 10 points.
+so 1+10+10+10+10=41-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+</head>
+    <style>
+        *{
+            color: gray;
+        }
+        #title{
+            color: red;
+        }
+        .h1{
+            color: blue;
+        }
+        h1{
+            color: pink;
+        }
+    </style>
+
+<body>
+     <h1 id="title" class="h1" style="color:purple">inline style<h1> 
+     <h1 id="title" class="h1">ID selector</h1> 
+    <h1 class="h1">Class selector</h1>
+
+
+    
+</body>
+</html>

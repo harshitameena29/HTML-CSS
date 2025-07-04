@@ -1,0 +1,48 @@
+
+<!--  read types of object fill from MDN reference of object fit 
+  object-fit: fill -> bas image ko bhardo box me leads to change in the ratio of original image
+   object-fit: contain -> image box ke ander aa jaye without distortion.isme box puri tarah se fill nhi ho payega
+   object-fit: cover -> fill kr dega box ko without changing the ratio of the image pr isme image kat jayegi thodi side se-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS object Fit and position</title>
+    <style>
+        .container {
+            height: 488px;
+            width: 466px;
+            border: 2px solid black;
+            /* background-color: azure; */
+            background-position: center center; /*50% 50% or 50px 50px kaise bhi likh skte h*/
+            background-clip: border-box;
+
+            background-image: url("https://us.123rf.com/450wm/progressman/progressman1909/progressman190900115/130695651-woman-in-black-coat-walking-along-the-sea.jpg?ver=6");
+            background-repeat: no-repeat; /*jab image choti hoti h to repeat krne lagti h khudko to ye usko prevent krne ke liye h*/
+        }
+
+        img {
+            width: 466px;
+            height: 488px;
+            object-fit: contain;
+            /* object-fit: fill; */
+            object-position: 10px 20px;
+            /* object-position: bottom right; */
+            /* object-fit: contain; */
+            /* object position ye batata h ki agar image puri nhi aarhi frame me to hame us image ka konsa wala part rakhna h us frame me  */
+
+         
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        
+        <!-- <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt=""> -->
+    </div>
+</body>
+
+</html>

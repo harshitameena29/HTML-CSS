@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: rgb(220, 250, 168);
+        }
+        .box1{
+            color:brown;
+            padding: 15px;
+            border: 10px solid rgb(86, 90, 215);
+            margin: 5px;
+            height: 300px;  /*this is the content height without including border and padding*/
+            box-sizing: border-box; /*this is done to resize the height or width.isme jo height h 300 usme hi border aur padding add ho jayegi.
+            badhiya cheez h ye isme jagah kam leta h box*/ 
+        }
+        .box2{
+            color: rgb(8, 59, 154);
+            padding: 15px;
+            border: 10px solid rgb(215, 86, 153);
+            margin: 15px;
+            height: 300px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box box1">I am box 1</div>
+    <div class="box box2">I am box 2</div>
+    <img src="boxmodel.png">
+    
+</body>
+</html>
+
+<!-- Margin Collapse-agar do box ki margin different h say box 1 = 5px and box2 = 15px to dono box ke beech me jo margin gap aayega vo 15px ka hoga(max of both the margins) 
+ 
+Total Width = Width + Left Padding + Right Padding + Left Border + Right Border + Left Margin + Right Margin
+
+Total Height = Height + Top Padding + Bottom Padding + Top Border + Bottom Border + Top Margin + Bottom Margin-->

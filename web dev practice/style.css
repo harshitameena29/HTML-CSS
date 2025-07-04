@@ -1,0 +1,30 @@
+h{
+    background-color: burlywood;
+    color: rgb(212, 60, 60);
+    font-size:xx-large;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color:rgb(236, 174, 236);
+}
+main{
+    display: flex;
+}
+div{
+    height: 200px;
+    width: 200px;
+}
+
+#sq1{
+    background-color: mediumvioletred;
+    color: azure;
+}
+#sq2{
+    background-color: rgb(2, 71, 64);
+    color: azure;
+}
+#sq3{
+    background-color: rgb(209, 209, 8);
+    color: rgb(1, 1, 1);
+}

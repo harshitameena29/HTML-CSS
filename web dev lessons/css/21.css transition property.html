@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+            width: 50vw;
+            height: 40vh;
+        }
+
+        .box{
+            background-color: aquamarine;
+            width: 5vw;
+            height: 4vh;
+             transition-property: background-color, transform;
+            transition-duration: 3s;
+            transition-timing-function: cubic-bezier(0.22, 0.43, 0, 0.99);
+            transition-delay: 1s; 
+            transition: all 3s cubic-bezier(0.09, 0.5, 0, 0.99) 1s; /*you can get this cubic bezeir from timing function
+            timing function means ki aapko transition ka path kaisa rakhna h */
+            /* instead of writing all these prop: transition-property,transition-duration,transition-timing-function,transition-delay you can use transition: all.
+            Go to inspect and from there go to elements and then box translate -> remove boc translate press enter you will see transition */
+        }
+        .translate{
+            transform: translateX(10vw) translateY(10vh) scale(2);
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+</body>
+</html>

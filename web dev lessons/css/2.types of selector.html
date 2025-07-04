@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Selector</title>
+    <style>
+
+        /* element selector: 
+        iska drawback ye h ki agar ham dusra div create karenge to ye uska bhi background color change kr dega*/ 
+        div{
+            background-color: darkslategrey; 
+        }
+
+        /* Class selector */ 
+        .class{
+            background-color: bisque;
+        }
+
+        /* Id selector */
+        #id{
+            background-color: hotpink;
+        }
+
+        /* child selector: 
+        sirf child hi ho*/ 
+        div > p{ 
+            color: rgb(1, 3, 3);
+            background-color: coral;
+        }
+
+        /* descendent selector:
+        div ke ander kuch bhi ho sabme prop lagegi */ 
+        div p{
+            color: rgb(228, 228, 228);
+            background-color: rgb(119, 43, 15);
+         } /*is selector ke baad child selector kaam nhi karega kyuki descendant ke ander hi child aata h*/
+
+        /* universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* pseudo selector */
+        a:visited{
+            color: darkred;
+        }
+        a:link{
+            color:blue;
+        }
+        a:active{
+            background-color: yellow; 
+            /* jab bhi link pr click karoge to background color yellow ho jayega */
+        }
+        a:hover{
+            background-color:deepskyblue;
+        }
+        /* p:first-child{ also a pseudo selector 
+            background-color: greenyellow;
+        } */ 
+
+        
+    </style>
+</head>
+<body>
+    <main> <!-- ye sirf p:first child dikhane ke liye -->
+        <p>i am first</p>
+        <p>i am second</p>
+    </main>
+    <div>
+        I am div
+    </div>
+    <div class="class">
+        I am class div
+            <p>i am the child of this div</p>
+        <article>
+            <p>i am not the child of this div as i am under article </p>
+        </article>
+        
+    </div>
+    <div id="id">
+        i am Id div
+    </div>
+    <a href="http://www.google.com">Go to Google</a>
+    <a href="http://www.facebook.com">Go to Facebook</a>
+
+    
+</body>
+</html>

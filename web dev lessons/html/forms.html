@@ -1,0 +1,20 @@
+Common attributes of forms:
+1.ACTION:-The action attribute specifies the URL where the form data should be sent after submission.
+2.method:-The method attribute defines how data is sent. The two most common methods are GET and POST.
+->GET: limit hoti h.Used to send small data
+->POST: used to send large data eg:sending passwords
+<form action="/submit.php" method="POST">
+</form>
+3.Name:-specifies the name for the form element.
+<input type="text" name="username">
+4.required:-the required attribute makes a field mandatory to fill out.
+<input type="text" required>
+5.autofocus:- automatically focuses the cursor on the particular input when the page loads
+<input type="text" autofocus>
+6.pattern:-The pattern attribute specifies a regular expression that the input must match to be valid.
+<input type="text" pattern="[a-zA-Z0-9]+">
+
+TEXTAREA AND SELECT
+.The textarea element is used when you need multiline text input from the user. This is particularly useful for comments, reviews, or any other type of input where the length is unpredictable.
+.The select element creates a dropdown menu for the user.Each option inside the select tag represents an item in the dropdown list.
+you can combine textarea and select area.

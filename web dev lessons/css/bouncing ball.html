@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bouncing ball</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        .container{
+            position: relative;
+            height:60vh;
+            width:80vw;
+            border: 2px solid black;
+            background-color: cornsilk;
+            overflow:hidden;
+        }
+        .ball{
+            position: absolute;
+            height:60px;
+            width:60px;
+            border: 1px solid black;
+            border-radius: 70px;
+            background-color: blue;
+            bottom: 0;
+            left: 0;
+            animation: animatex 4s linear forwards,
+                              animatey 4s ease-out forwards; 
+                              
+         }
+         
+    @keyframes animatex{
+            from{
+               left: 0; 
+            }
+            to{
+                left:100%;
+            }
+    }
+    @keyframes animatey{
+     0%   { transform: translateY(0); }
+  10%  { transform: translateY(-200px); }
+  20%  { transform: translateY(0); }
+  30%  { transform: translateY(-150px); }
+  40%  { transform: translateY(0); }
+  50%  { transform: translateY(-100px); }
+  60%  { transform: translateY(0); }
+  70%  { transform: translateY(-60px); }
+  80%  { transform: translateY(0); }
+  90%  { transform: translateY(-30px); }
+  100% { transform: translateY(0); }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+        </div>
+
+    
+</body>
+</html>

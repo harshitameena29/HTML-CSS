@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css sizing</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    html{
+        font-size: 12px;
+    }
+    .box{
+        box-sizing: border-box; 
+        border:2px solid black; 
+        width: 2048px; /*in pixels */
+        margin: auto; /*taki box centre me aaye*/
+         background-color: deepskyblue
+   }
+   .container{
+    box-sizing: border-box; 
+    border:2px solid black;  
+    width: 100vw; /*viewport width */
+    /* height: 20vw; viewport height */
+    min-height: 40vh; /*min lagane se kya hota hi ki ab agar apan container me kitne bhi chahe words daale vo box apne aap adjust ho jayega.words bahar nhi jayenge box se*/
+    margin: 30px auto; 
+    font-size: 20px;
+    background-color: darksalmon;
+}
+.container p{
+    /* font-size: 2em;  */
+     font-size: 2rem; 
+     /*em - Relative to the font size of the parent element(container). Eg: 5em means the size would be 5 times the current font size.
+     rem - Relative to the font size of the root(html)element
+     by default font size 16px hota h .
+     
+     vmin-device ki minimum length(in laptop height is vmin but in phones width is vmin)
+     vmax-device ki max length.
+     ye dono bhi units hi hoti h */
+}
+.percentage {
+    box-sizing: border-box; 
+    border:2px solid black;  
+    width: 60vw; 
+    min-height: 40vh;
+    margin: 30px auto; 
+    font-size: 20px;
+    background-color: rgb(176, 122, 233);
+}
+.percentage > div{
+    border: 2px solid black;
+    background-color: bisque;
+    width: 50%;
+}
+.percentage > div > div{
+    border: 2px solid black;
+    background-color: rgb(204, 255, 196);
+    width: 50%;
+}
+</style>
+<body>
+    <div class="box">
+        hey i am a box
+    </div>
+    <div class="container">
+        below font is dobnle the size of me
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut excepturi quisquam vitae voluptates officia eius reprehenderit facilis at modi commodi quae, veritatis, autem ut explicabo? Distinctio ea voluptatum autem sequi hic officiis deserunt, quam et a suscipit consectetur nam sunt ducimus velit illum excepturi tempora sint in ullam quas doloremque molestiae magnam. Impedit molestias eos dolor.
+        </p>
+        <!-- try this to learn concept of min height: lorem500 -->
+
+    </div>
+
+    <div class="percentage">
+        i am the div percentage. width 50% means it just made the width of the container 50 percent for their child. 
+        <div>
+            i am the 50 percentage of my parent percentage
+            <div>
+                i am the 50 percentage of my parent div which is above me
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
+<!-- viewport jo h vo device ke hisab se apni width aur height deti h  -->

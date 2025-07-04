@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            padding:34px;
+            box-shadow:  5px 15px 5px #70a711;
+            outline: 4px solid palevioletred;
+        }
+        .text-element { text-shadow: 10px 5px 3px #e695f7}
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a box.(go to inspect then click on i am a box and in styles you can change anything from text shadow)
+    </div>
+
+    <p class="text-element">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, atque. Modi voluptatibus necessitatibus architecto quidem sit maiores, ad nesciunt et odit esse. Possimus, ipsam et molestiae eius quae nisi quisquam maiores fugiat aut fuga!
+    </p>
+    
+</body>
+</html>
+<!--
+ BOX SHADOWS:  box-shadow: h-offset v-offset blur spread color inset; //format
+
+ h-offset and v-offset: Determines the shadow's horizontal and vertical position.
+blur: The larger the value, the blurrier the shadow.
+spread: Expands or shrinks the shadow size.
+color: Defines the shadow color.
+inset: Makes the shadow inner.
+
+TEXT SHADOW: text-shadow: h-offset v-offset blur color;
+OUTLINE: outline: width style color;
+
+Differences between Outlines and Borders:
+Position: Outlines don't take up space; they're drawn around the element, outside of any border.
+Offset: Using the outline-offset property, you can set the space between an outline and the edge or border of an element.
+Width: Borders can have varying widths on different sides, outlines have a uniform width.
+Rounded Corners: Borders can have rounded corners using border-radius, while outlines generally cannot.
+
+  -->

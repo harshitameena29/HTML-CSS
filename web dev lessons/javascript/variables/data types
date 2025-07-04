@@ -1,0 +1,13 @@
+there are two types of data type:
+
+1.Primitive: set of basic data types in java script. 7 primitive data types: null,number,string,symbol,undefined,boolean,big Int.
+
+null is primitive.However, due to a historical bug in the language, typeof null returns 'object'."
+
+"This behavior comes from the early implementation of JavaScript, where values were stored in a way that used the lower bits of the type tag to identify objects. Since null had all zero bits, it was incorrectly identified as an object."
+
+2.Object: user defined.in object you can alter,add and many keys.
+const item = {
+    name: "house"
+    price: "500crores"
+}

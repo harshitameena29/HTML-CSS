@@ -1,0 +1,65 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: rgb(167, 230, 209);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+div{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 30%;
+    height: 30%;
+}
+#box1{
+    background-color: blue;
+}
+#box2{
+    background-color: chocolate;
+}
+h4{
+    color: black;
+    background-color: bisque;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#shape1{
+    background-color: rgb(207, 117, 117);
+    height: 200px;
+    width: 200px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+
+}
+#shape2{
+    background-color: rgb(181, 135, 224);
+    height: 200px;
+    width: 200px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 50%;
+}
+#shape3{
+    background-color: chartreuse;
+    height: 30%;
+    width: 30%;
+    border-style: solid;
+    border-width: 3px;
+}
+#shape4{
+    background-color: pink;
+    height: 30%;
+    width: 30%;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 50%;
+
+}
